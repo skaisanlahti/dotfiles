@@ -104,6 +104,7 @@ alias t='task'
 alias n='nvim'
 alias g='git'
 alias gs='git status'
+alias dl='du -bsh'
 
 # if [ -f ~/.bash_aliases ]; then
 #     . ~/.bash_aliases
