@@ -103,6 +103,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias t='task'
 alias n='nvim'
 alias g='git'
+alias gs='git status'
 
 # if [ -f ~/.bash_aliases ]; then
 #     . ~/.bash_aliases
