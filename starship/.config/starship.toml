@@ -1,0 +1,137 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$golang\
+$rust\
+$dotnet\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[->](bold green)"
+error_symbol = "[?!](bold red)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[c]
+symbol = "C "
+
+[deno]
+symbol = "deno "
+
+[dotnet]
+symbol = ".NET "
+format = '[$symbol($version )]($style)'
+
+[directory]
+read_only = " ro"
+
+[docker_context]
+symbol = "docker "
+
+[git_branch]
+symbol = "git "
+
+[golang]
+symbol = "go "
+format = '[$symbol($version )]($style)'
+
+[gradle]
+symbol = "gradle "
+
+[java]
+symbol = "java "
+
+[lua]
+symbol = "lua "
+format = '[$symbol($version )]($style)'
+
+[nodejs]
+symbol = "nodejs "
+format = '[$symbol($version )]($style)'
+
+[memory_usage]
+symbol = "memory "
+
+[os.symbols]
+Alpaquita = "alq "
+Alpine = "alp "
+Amazon = "amz "
+Android = "andr "
+Arch = "rch "
+Artix = "atx "
+CentOS = "cent "
+Debian = "deb "
+DragonFly = "dfbsd "
+Emscripten = "emsc "
+EndeavourOS = "ndev "
+Fedora = "fed "
+FreeBSD = "fbsd "
+Garuda = "garu "
+Gentoo = "gent "
+HardenedBSD = "hbsd "
+Illumos = "lum "
+Linux = "lnx "
+Mabox = "mbox "
+Macos = "mac "
+Manjaro = "mjo "
+Mariner = "mrn "
+MidnightBSD = "mid "
+Mint = "mint "
+NetBSD = "nbsd "
+NixOS = "nix "
+OpenBSD = "obsd "
+OpenCloudOS = "ocos "
+openEuler = "oeul "
+openSUSE = "osuse "
+OracleLinux = "orac "
+Pop = "pop "
+Raspbian = "rasp "
+Redhat = "rhl "
+RedHatEnterprise = "rhel "
+Redox = "redox "
+Solus = "sol "
+SUSE = "suse "
+Ubuntu = "ubnt "
+Unknown = "unk "
+Windows = "win "
+
+[package]
+symbol = "pkg "
+
+[php]
+symbol = "php "
+
+[python]
+symbol = "py "
+format = '[$symbol($version )]($style)'
+
+[rust]
+symbol = "rs "
+format = '[$symbol($version )]($style)'
+
+[status]
+symbol = "[x](bold red) "
+
+[sudo]
+symbol = "sudo "
+
+[zig]
+symbol = "zig "
+format = '[$symbol($version )]($style)'
