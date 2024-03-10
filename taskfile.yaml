@@ -1,0 +1,18 @@
+version: '3'
+
+vars:
+  HOME: /home/dev
+
+tasks:
+  add:
+    aliases: [a]
+    desc: Stow all files
+    cmds:
+      - stow --verbose --restow --target={{.HOME}} */
+      - source {{.HOME}}/.bashrc
+
+  remove:
+    aliases: [r]
+    desc: Remove all stowed files
+    cmds:
+      - stow --verbose --delete --target={{.HOME}} */
