@@ -9,7 +9,6 @@ tasks:
     desc: Stow all files
     cmds:
       - stow --verbose --restow --target={{.HOME}} */
-      - source {{.HOME}}/.bashrc
 
   remove:
     aliases: [r]
